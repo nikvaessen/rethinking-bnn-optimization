@@ -32,3 +32,6 @@ cd ..
 # install dependencies
 sudo pip3.6 install --upgrade setuptools
 sudo pip3.6 install -r requirements.txt
+
+cd ..
+sudo pip3.6 install -e .

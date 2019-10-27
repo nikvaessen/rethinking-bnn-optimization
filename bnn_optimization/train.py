@@ -31,10 +31,6 @@ def train(build_model, dataset, hparams, output_dir, epochs, tensorboard):
             ]
         )
 
-    # with tf.Session() as sess:
-    #     devices = sess.list_devices()
-    #     print(devices)
-
     with tf.device("/cpu:0"):
         train_data = dataset.train_data(hparams.batch_size)
         validation_data = dataset.validation_data(hparams.batch_size)

@@ -1,0 +1,163 @@
+2019-10-27 13:39:29.974443: E tensorflow/core/common_runtime/executor.cc:641] Executor failed to create kernel. Not found: No registered 'Const' OpKernel for GPU devices compatible with node {{node random_crop/Assert/Assert/data_0}}
+         (OpKernel was found, but attributes didn't match) Requested Attributes: dtype=DT_STRING, value=Tensor<type: string shape: [] values: Need value.shape >= size, got >
+        .  Registered:  device='XLA_CPU_JIT'; dtype in [DT_FLOAT, DT_DOUBLE, DT_INT32, DT_UINT8, DT_INT8, ..., DT_COMPLEX128, DT_HALF, DT_UINT32, DT_UINT64, DT_STRING]
+  device='XLA_GPU_JIT'; dtype in [DT_FLOAT, DT_DOUBLE, DT_INT32, DT_UINT8, DT_INT8, ..., DT_BFLOAT16, DT_HALF, DT_UINT32, DT_UINT64, DT_STRING]
+  device='XLA_CPU'; dtype in [DT_UINT8, DT_QUINT8, DT_INT8, DT_QINT8, DT_INT32, DT_QINT32, DT_INT64, DT_HALF, DT_FLOAT, DT_DOUBLE, DT_COMPLEX64, DT_COMPLEX128, DT_BOOL, DT_BFLOAT16]
+  device='GPU'; dtype in [DT_VARIANT]
+  device='GPU'; dtype in [DT_BOOL]
+  device='GPU'; dtype in [DT_COMPLEX128]
+  device='GPU'; dtype in [DT_COMPLEX64]
+  device='GPU'; dtype in [DT_UINT64]
+  device='GPU'; dtype in [DT_INT64]
+  device='GPU'; dtype in [DT_QINT32]
+  device='GPU'; dtype in [DT_UINT32]
+  device='GPU'; dtype in [DT_QUINT16]
+  device='GPU'; dtype in [DT_QINT16]
+  device='GPU'; dtype in [DT_INT16]
+  device='GPU'; dtype in [DT_UINT16]
+  device='GPU'; dtype in [DT_QINT8]
+  device='GPU'; dtype in [DT_INT8]
+  device='GPU'; dtype in [DT_UINT8]
+  device='GPU'; dtype in [DT_DOUBLE]
+  device='GPU'; dtype in [DT_FLOAT]
+  device='GPU'; dtype in [DT_BFLOAT16]
+  device='GPU'; dtype in [DT_HALF]
+  device='GPU'; dtype in [DT_INT32]
+  device='CPU'
+  device='XLA_GPU'; dtype in [DT_UINT8, DT_QUINT8, DT_INT8, DT_QINT8, DT_INT32, DT_QINT32, DT_INT64, DT_HALF, DT_FLOAT, DT_DOUBLE, DT_COMPLEX64, DT_BOOL, DT_BFLOAT16]
+
+         [[random_crop/Assert/Assert/data_0]]
+2019-10-27 13:39:29.974654: W tensorflow/core/framework/op_kernel.cc:1502] OP_REQUIRES failed at iterator_ops.cc:601 : Not found: No registered 'Const' OpKernel for GPU devices compatible with node {{node random_crop/Assert/Assert/data_0}}
+         (OpKernel was found, but attributes didn't match) Requested Attributes: dtype=DT_STRING, value=Tensor<type: string shape: [] values: Need value.shape >= size, got >
+        .  Registered:  device='XLA_CPU_JIT'; dtype in [DT_FLOAT, DT_DOUBLE, DT_INT32, DT_UINT8, DT_INT8, ..., DT_COMPLEX128, DT_HALF, DT_UINT32, DT_UINT64, DT_STRING]
+  device='XLA_GPU_JIT'; dtype in [DT_FLOAT, DT_DOUBLE, DT_INT32, DT_UINT8, DT_INT8, ..., DT_BFLOAT16, DT_HALF, DT_UINT32, DT_UINT64, DT_STRING]
+  device='XLA_CPU'; dtype in [DT_UINT8, DT_QUINT8, DT_INT8, DT_QINT8, DT_INT32, DT_QINT32, DT_INT64, DT_HALF, DT_FLOAT, DT_DOUBLE, DT_COMPLEX64, DT_COMPLEX128, DT_BOOL, DT_BFLOAT16]
+  device='GPU'; dtype in [DT_VARIANT]
+  device='GPU'; dtype in [DT_BOOL]
+  device='GPU'; dtype in [DT_COMPLEX128]
+  device='GPU'; dtype in [DT_COMPLEX64]
+  device='GPU'; dtype in [DT_UINT64]
+  device='GPU'; dtype in [DT_INT64]
+  device='GPU'; dtype in [DT_QINT32]
+  device='GPU'; dtype in [DT_UINT32]
+  device='GPU'; dtype in [DT_QUINT16]
+  device='GPU'; dtype in [DT_QINT16]
+  device='GPU'; dtype in [DT_INT16]
+  device='GPU'; dtype in [DT_UINT16]
+  device='GPU'; dtype in [DT_QINT8]
+  device='GPU'; dtype in [DT_INT8]
+  device='GPU'; dtype in [DT_UINT8]
+  device='GPU'; dtype in [DT_DOUBLE]
+  device='GPU'; dtype in [DT_FLOAT]
+  device='GPU'; dtype in [DT_BFLOAT16]
+  device='GPU'; dtype in [DT_HALF]
+  device='GPU'; dtype in [DT_INT32]
+  device='CPU'
+  device='XLA_GPU'; dtype in [DT_UINT8, DT_QUINT8, DT_INT8, DT_QINT8, DT_INT32, DT_QINT32, DT_INT64, DT_HALF, DT_FLOAT, DT_DOUBLE, DT_COMPLEX64, DT_BOOL, DT_BFLOAT16]
+
+         [[random_crop/Assert/Assert/data_0]]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1356, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1341, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1429, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.NotFoundError: No registered 'Const' OpKernel for GPU devices compatible with node {{node random_crop/Assert/Assert/data_0}}
+         (OpKernel was found, but attributes didn't match) Requested Attributes: dtype=DT_STRING, value=Tensor<type: string shape: [] values: Need value.shape >= size, got >
+        .  Registered:  device='XLA_CPU_JIT'; dtype in [DT_FLOAT, DT_DOUBLE, DT_INT32, DT_UINT8, DT_INT8, ..., DT_COMPLEX128, DT_HALF, DT_UINT32, DT_UINT64, DT_STRING]
+  device='XLA_GPU_JIT'; dtype in [DT_FLOAT, DT_DOUBLE, DT_INT32, DT_UINT8, DT_INT8, ..., DT_BFLOAT16, DT_HALF, DT_UINT32, DT_UINT64, DT_STRING]
+  device='XLA_CPU'; dtype in [DT_UINT8, DT_QUINT8, DT_INT8, DT_QINT8, DT_INT32, DT_QINT32, DT_INT64, DT_HALF, DT_FLOAT, DT_DOUBLE, DT_COMPLEX64, DT_COMPLEX128, DT_BOOL, DT_BFLOAT16]
+  device='GPU'; dtype in [DT_VARIANT]
+  device='GPU'; dtype in [DT_BOOL]
+  device='GPU'; dtype in [DT_COMPLEX128]
+  device='GPU'; dtype in [DT_COMPLEX64]
+  device='GPU'; dtype in [DT_UINT64]
+  device='GPU'; dtype in [DT_INT64]
+  device='GPU'; dtype in [DT_QINT32]
+  device='GPU'; dtype in [DT_UINT32]
+  device='GPU'; dtype in [DT_QUINT16]
+  device='GPU'; dtype in [DT_QINT16]
+  device='GPU'; dtype in [DT_INT16]
+  device='GPU'; dtype in [DT_UINT16]
+  device='GPU'; dtype in [DT_QINT8]
+  device='GPU'; dtype in [DT_INT8]
+  device='GPU'; dtype in [DT_UINT8]
+  device='GPU'; dtype in [DT_DOUBLE]
+  device='GPU'; dtype in [DT_FLOAT]
+  device='GPU'; dtype in [DT_BFLOAT16]
+  device='GPU'; dtype in [DT_HALF]
+  device='GPU'; dtype in [DT_INT32]
+  device='CPU'
+  device='XLA_GPU'; dtype in [DT_UINT8, DT_QUINT8, DT_INT8, DT_QINT8, DT_INT32, DT_QINT32, DT_INT64, DT_HALF, DT_FLOAT, DT_DOUBLE, DT_COMPLEX64, DT_BOOL, DT_BFLOAT16]
+
+         [[random_crop/Assert/Assert/data_0]]
+         [[MakeIterator]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/bnno", line 11, in <module>
+    load_entry_point('rethinking-bnn-optimization', 'console_scripts', 'bnno')()
+  File "/usr/local/lib/python3.6/site-packages/click/core.py", line 764, in __call__
+    return self.main(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/click/core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "/usr/local/lib/python3.6/site-packages/click/core.py", line 1137, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/usr/local/lib/python3.6/site-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/usr/local/lib/python3.6/site-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/zookeeper/cli.py", line 100, in train
+    function(build_model, dataset, hparams, output_dir, epochs, **kwargs)
+  File "/home/nik/rethinking-bnn-optimization/bnn_optimization/train.py", line 64, in train
+    callbacks=callbacks,
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/keras/engine/training.py", line 780, in fit
+    steps_name='steps_per_epoch')
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/keras/engine/training_arrays.py", line 142, in model_iteration
+    input_iterator = _get_iterator(inputs, model._distribution_strategy)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/keras/engine/training_arrays.py", line 517, in _get_iterator
+    return training_utils.get_iterator(inputs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/keras/engine/training_utils.py", line 1315, in get_iterator
+    initialize_iterator(iterator)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/keras/engine/training_utils.py", line 1322, in initialize_iterator
+    K.get_session((init_op,)).run(init_op)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 950, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1173, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1350, in _do_run
+    run_metadata)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1370, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.NotFoundError: No registered 'Const' OpKernel for GPU devices compatible with node {{node random_crop/Assert/Assert/data_0}}
+         (OpKernel was found, but attributes didn't match) Requested Attributes: dtype=DT_STRING, value=Tensor<type: string shape: [] values: Need value.shape >= size, got >
+        .  Registered:  device='XLA_CPU_JIT'; dtype in [DT_FLOAT, DT_DOUBLE, DT_INT32, DT_UINT8, DT_INT8, ..., DT_COMPLEX128, DT_HALF, DT_UINT32, DT_UINT64, DT_STRING]
+  device='XLA_GPU_JIT'; dtype in [DT_FLOAT, DT_DOUBLE, DT_INT32, DT_UINT8, DT_INT8, ..., DT_BFLOAT16, DT_HALF, DT_UINT32, DT_UINT64, DT_STRING]
+  device='XLA_CPU'; dtype in [DT_UINT8, DT_QUINT8, DT_INT8, DT_QINT8, DT_INT32, DT_QINT32, DT_INT64, DT_HALF, DT_FLOAT, DT_DOUBLE, DT_COMPLEX64, DT_COMPLEX128, DT_BOOL, DT_BFLOAT16]
+  device='GPU'; dtype in [DT_VARIANT]
+  device='GPU'; dtype in [DT_BOOL]
+  device='GPU'; dtype in [DT_COMPLEX128]
+  device='GPU'; dtype in [DT_COMPLEX64]
+  device='GPU'; dtype in [DT_UINT64]
+  device='GPU'; dtype in [DT_INT64]
+  device='GPU'; dtype in [DT_QINT32]
+  device='GPU'; dtype in [DT_UINT32]
+  device='GPU'; dtype in [DT_QUINT16]
+  device='GPU'; dtype in [DT_QINT16]
+  device='GPU'; dtype in [DT_INT16]
+  device='GPU'; dtype in [DT_UINT16]
+  device='GPU'; dtype in [DT_QINT8]
+  device='GPU'; dtype in [DT_INT8]
+  device='GPU'; dtype in [DT_UINT8]
+  device='GPU'; dtype in [DT_DOUBLE]
+  device='GPU'; dtype in [DT_FLOAT]
+  device='GPU'; dtype in [DT_BFLOAT16]
+  device='GPU'; dtype in [DT_HALF]
+  device='GPU'; dtype in [DT_INT32]
+  device='CPU'
+  device='XLA_GPU'; dtype in [DT_UINT8, DT_QUINT8, DT_INT8, DT_QINT8, DT_INT32, DT_QINT32, DT_INT64, DT_HALF, DT_FLOAT, DT_DOUBLE, DT_COMPLEX64, DT_BOOL, DT_BFLOAT16]
+
+         [[random_crop/Assert/Assert/data_0]]
+         [[MakeIterator]]
