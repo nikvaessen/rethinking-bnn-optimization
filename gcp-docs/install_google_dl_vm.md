@@ -4,6 +4,8 @@ If you want to run these experiments on Google's deep learning VM (on GCP),
 you can follow these instructions. We assume that you have deployed a clean instance with
 CUDA10.0 and have an ssh connection to it.
 
+![gcp setup](gcp_setup.png)
+
 First get a copy of this repository:
 
 ```
