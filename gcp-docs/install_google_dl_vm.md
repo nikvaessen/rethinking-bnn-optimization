@@ -6,7 +6,12 @@ CUDA10.0 and have an ssh connection to it.
 
 First get a copy of this repository:
 
+git clone https://github.com/nikvaessen/rethinking-bnn-optimization.git
+
+
 ```
+git clone https://github.com/nikvaessen/rethinking-bnn-optimization.git
+
 git clone https://github.com/plumerai/rethinking-bnn-optimization.git
 cd rethinkin-bnn-optimization/gcp-docs
 ```
