@@ -48,16 +48,17 @@ def train(build_model, dataset, hparams, output_dir, epochs, tensorboard):
             model.load_weights(model_path)
             click.echo(f"Loaded model from epoch {initial_epoch}")
 
-    model.fit(
-        train_data,
-        epochs=epochs,
-        steps_per_epoch=dataset.train_examples // hparams.batch_size,
-        validation_data=validation_data,
-        validation_steps=dataset.validation_examples // hparams.batch_size,
-        verbose=2 if tensorboard else 1,
-        initial_epoch=initial_epoch,
-        callbacks=callbacks,
-    )
+    with tf.device('/gpu:0'):
+        model.fit(
+            train_data,
+            epochs=epochs,
+            steps_per_epoch=dataset.train_examples // hparams.batch_size,
+            validation_data=validation_data,
+            validation_steps=dataset.validation_examples // hparams.batch_size,
+            verbose=2 if tensorboard else 1,
+            initial_epoch=initial_epoch,
+            callbacks=callbacks,
+        )
 
     model_name = build_model.__name__
     model.save_weights(path.join(output_dir, f"{model_name}_weights.h5"))

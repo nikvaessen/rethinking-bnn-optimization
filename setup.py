@@ -16,7 +16,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/plumerai/rethinking-bnn-optimization.git",
     packages=find_packages(),
-    python_requires=">=3.6",
+    python_requires=">=3.5",
     license="Apache 2.0",
     install_requires=[
         "click==7.0",
