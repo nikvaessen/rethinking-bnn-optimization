@@ -1,6 +1,6 @@
 sudo apt-get update
 
-# download depencencies for building python 3.6
+# download and install depencencies for building python 3.6
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
 libncurses5-dev  libncursesw5-dev xz-utils tk-dev \
@@ -28,7 +28,7 @@ cd Python-3.6.4
 sudo make altinstall
 cd ..
 
-# install dependencies
+# install project dependencies
 sudo pip3.6 install --upgrade setuptools
 sudo pip3.6 install -r requirements.txt
 
