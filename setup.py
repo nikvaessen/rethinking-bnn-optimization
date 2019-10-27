@@ -24,10 +24,10 @@ setup(
         "larq==0.2.0",
         "zookeeper==0.1.1",
     ],
-    # extras_require={
-    #     "tensorflow": ["tensorflow==1.14.0rc0"],
-    #     "tensorflow_gpu": ["tensorflow-gpu==1.14.0rc0"],
-    # },
+    extras_require={
+        "tensorflow": ["tensorflow==1.14.0rc0"],
+        "tensorflow_gpu": ["tensorflow-gpu==1.14.0rc0"],
+    },
     entry_points="""
         [console_scripts]
         bnno=bnn_optimization.train:cli
