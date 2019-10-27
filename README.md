@@ -15,6 +15,10 @@ Implementation for paper "[Latent Weights Do Not Exist: Rethinking Binarized Neu
 
 You can also check out one of our prebuilt [docker images](https://hub.docker.com/r/plumerai/deep-learning/tags).
 
+## Running on Google Cloud Platform
+
+See `gcp-docs/install_google_dl_vm.md` for instructions on running these experiments on GCP deep learning vm.
+
 ## Installation
 
 This is a complete Python module. To install it in your local Python environment, `cd` into the folder containing `setup.py` and run:
