@@ -1,2 +1,6 @@
-tensorflow==1.14.0rc0
-tensorflow-gpu==1.14.0rc0
+tensorflow==1.14.0
+tensorflow-gpu==1.14.0
+click==7.0
+tensorflow-datasets==1.0.2
+larq==0.2.0
+zookeeper==0.1.1
