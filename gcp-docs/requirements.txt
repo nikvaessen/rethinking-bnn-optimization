@@ -1,7 +1,7 @@
 setuptools>=41.0.0
-tensorflow
-tensorflow-gpu
-tensorflow-datasets
+tensorflow=1.14.0rc0
+tensorflow-gpu=1.14.0rc0
+tensorflow-datasets=1.0.2
 click==7.0
 larq==0.2.0
 zookeeper==0.1.1

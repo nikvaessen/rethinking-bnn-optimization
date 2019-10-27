@@ -18,16 +18,16 @@ setup(
     packages=find_packages(),
     python_requires=">=3.5",
     license="Apache 2.0",
-    # install_requires=[
-    #     "click==7.0",
-    #     "tensorflow-datasets==1.0.2",
-    #     "larq==0.2.0",
-    #     "zookeeper==0.1.1",
-    # ],
-    # extras_require={
-    #     "tensorflow": ["tensorflow==1.14.0rc0"],
-    #     "tensorflow_gpu": ["tensorflow-gpu==1.14.0rc0"],
-    # },
+    install_requires=[
+        "click==7.0",
+        "tensorflow-datasets==1.0.2",
+        "larq==0.2.0",
+        "zookeeper==0.1.1",
+    ],
+    extras_require={
+        "tensorflow": ["tensorflow==1.14.0rc0"],
+        "tensorflow_gpu": ["tensorflow-gpu==1.14.0rc0"],
+    },
     entry_points="""
         [console_scripts]
         bnno=bnn_optimization.train:cli
