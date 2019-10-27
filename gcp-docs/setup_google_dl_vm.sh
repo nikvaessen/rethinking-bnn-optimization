@@ -1,10 +1,9 @@
 sudo apt-get update
 
 # download depencencies for building python 3.6
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev
-sudo apt-get install -y libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm
-sudo apt-get install -y libncurses5-dev  libncursesw5-dev xz-utils tk-dev
-sudo apt-get install -y \
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncurses5-dev  libncursesw5-dev xz-utils tk-dev \
 libbluetooth-dev \
 libbz2-dev \
 libdb-dev \
